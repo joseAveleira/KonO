@@ -45,18 +45,21 @@ module.exports = {
             });
         };
 
-         this.allUser = function (req, res) {
+        this.allUser = function (req, res) {
 
-             var usuarios = new conDB.model('usuario');
+            var usuarios = new conDB.model('usuario');
 
             usuarios.find({}, function (err, usuarios) {
-                if (err) {
-                    return res.status(500).send(err.message);
-                }
+                    if (err) {
+                        return res.status(500).send(err.message);
+                    }
 
-                console.log('  > Listando: ' + usuarios.length);
-                res.status(200).json(usuarios);
-            });
+                    console.log('  > Listando: ' + usuarios.length);
+                    res.status(200).json(usuarios);
+                })
+                .sort({
+                    'estrellas': -1
+                });
 
 
 
