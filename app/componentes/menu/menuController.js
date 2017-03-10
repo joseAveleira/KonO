@@ -28,6 +28,10 @@
 
             $location.path('/proyectos');
         };
+        $scope.usuarios = function() {
+
+            $location.path('/usuarios');
+        };
     }
 
     angular

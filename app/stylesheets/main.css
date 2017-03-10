@@ -3,10 +3,14 @@
     background-color: lightgray;
 }
 
+.vistasWrapper {
+
+    margin: 15px;
+}
+
 .vistasWrapper > .ui.items > .item {
 
     width: initial;
-    margin: 15px;
     padding: 10px 15px;
     background-color: white;
 }
@@ -28,4 +32,19 @@
 .iniciarBtn:hover, .registrarseBtn:hover {
 
     background-color: rgba(200, 200, 200, 1) !important;
+}
+
+.ui.header.white {
+
+    color: white;
+}
+
+.loginRotando {
+
+    text-align: center;
+}
+
+.cardUsuario {
+
+    margin: 20px !important;
 }

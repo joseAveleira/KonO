@@ -1,24 +1,55 @@
 <div class="ui inverted labeled icon menu oscuro" ng-controller="MenuController">
-  <a class="item" ng-click="inicio()" ng-class="{active: isActive('/')}">
-      <i class="home yellow icon"></i>
-      Inicio
-  </a>
-  <a class="item" ng-click="proyectos()" ng-class="{active: isActive('/proyectos')}">
-      <i class="browser icon"></i>
-      Proyectos
-  </a>
-  <a class="item" ng-click="usuarios()" ng-class="{active: isActive('/usuarios')}">
-      <i class="users icon"></i>
-      Colabs
-  </a>
-  <div class="right menu">
-    <a class="item iniciarBtn">
-      <i class="user blue icon"></i>
-      Iniciar Sesion
+    <a class="item" ng-click="inicio()" ng-class="{active: isActive('/')}">
+        <i class="home yellow icon"></i> Inicio
     </a>
-    <a class="item registrarseBtn">
-      <i class="add user green icon"></i>
-      Registrarse
+    <a class="item" ng-click="proyectos()" ng-class="{active: isActive('/proyectos')}">
+        <i class="browser icon"></i> Proyectos
     </a>
-  </div>
+    <a class="item" ng-click="usuarios()" ng-class="{active: isActive('/usuarios')}">
+        <i class="users icon"></i> Colabs
+    </a>
+    <div class="right menu">
+        <a class="item iniciarBtn">
+            <i class="user blue icon"></i> Iniciar Sesion
+        </a>
+        <a class="item registrarseBtn">
+            <i class="add user green icon"></i> Registrarse
+        </a>
+    </div>
+</div>
+
+<!-- MODAL -->
+<div class="ui basic modal">
+    <div class="ui orange header loginRotando">
+        <i class="huge icons">
+            <i class="big loading sun icon"></i>
+            <i class="small user icon"></i>
+        </i>
+        <div class="ui white header">
+             Inicio de Sesión
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <input type="text" placeholder="Nombre de Usuario">
+            </div>
+            <div class="field">
+                <input type="password" placeholder="Contraseña">
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        ¿Aún no tienes una cuenta?
+        <div class="ui blue basic cancel inverted button">
+            <i class="plus icon"></i> Registrate
+        </div>
+        <div class="ui red ok inverted button">
+            <i class="remove icon"></i> Cancelar
+        </div>
+        <div class="ui green ok inverted button">
+            <i class="checkmark icon"></i> Iniciar
+        </div>
+    </div>
 </div>
