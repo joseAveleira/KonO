@@ -1,0 +1,407 @@
+
+// colores
+b_silver = #ddd
+b_border = #dbdbdb
+b_azul = #ABD2F3
+b_oscuro = #002056
+b_texto = #414141
+b_cleObligatorio = #d7f7d1
+b_celeSeleccion = #dec8fc
+b_cleOpcional = #fbdfc6
+
+body
+  font-size 16px
+  background-color #ebebeb
+  color b_texto
+
+
+.blog-post-list
+  list-style-type none
+
+  .blog-post-link
+    margin .5em 0 1em 0
+    padding 0 0 .25em 0
+    border-bottom 1px solid b_silver
+
+
+.blog-post
+
+  .blog-post-header
+    h1
+      font-family 'Raleway'
+
+.comments
+
+  .comments-list
+    list-style-type none
+
+    .comment-item
+      border 1px solid b_silver
+      border-radius 5px
+      padding .5em
+      margin .5em
+
+      .comment-author
+        font-family 'Raleway'
+        font-weight bold
+
+      .comment-body
+        font-style italic
+
+/* Red */
+$bgDefault = #ABD2F3
+$bgHighlight = #002056
+$colDefault = #002056
+$colHover = #ffffff
+
+                           /* Green * /
+$bgDefault      : #2ecc71;
+$bgHighlight    : #27ae60;
+$colDefault     : #ecf0f1;
+$colHover       : #d1ffed; /*/
+                           /* Purple * /
+$bgDefault      : #9b59b6;
+$bgHighlight    : #8e44ad;
+$colDefault     : #ecf0f1;
+$colHover       : #ecdbff; /*/
+                           /* Orange * /
+$bgDefault      : #e67e22;
+$bgHighlight    : #d35400;
+$colDefault     : #ecf0f1;dbdbdb
+$colHover       : #ffe6d1; /*/
+/* --- Style --- */
+.navbar-default
+  background-color b_azul
+  border-color: #c3c2c2
+  .navbar-brand
+    color: $colDefault
+    &:hover, &:focus
+      color: $colHover
+  .navbar-nav
+    > li
+      > a
+        color: $colDefault
+        &:hover, &:focus
+          color: $colHover
+    .active
+      > a, > a:hover, > a:focus
+        color: $colHover
+        background-color b_oscuro
+    .open
+      > a, > a:hover, > a:focus
+        color: $colHover
+        background-color b_oscuro
+        .caret
+          border-top-color: $colHover
+          border-bottom-color: $colHover
+    > .dropdown
+      > a
+        .caret
+          border-top-color b_oscuro
+          border-bottom-color b_oscuro
+        &:hover, &:focus
+          .caret
+            border-top-color: $colHover
+            border-bottom-color: $colHover
+  .navbar-toggle
+    border-color: $bgHighlight
+    &:hover, &:focus
+      background-color: $bgHighlight
+    .icon-bar
+      background-color: $colDefault
+@media (max-width: 767px)
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a
+    color: $colDefault
+    &:hover, &:focus
+      color: $colHover
+      background-color: $bgHighlight
+
+.panel
+    border-width 1px
+    border-color b_border
+    border-radius 0px
+    padding  0px
+    margin-bottom 15px
+
+.panel-editar
+    margin  0px
+    text-align center
+
+.panel-icono
+    margin  0px
+    background-color b_azul
+    border-color b_border
+    text-align center
+    color #FFF
+
+a:link
+    text-decoration none
+    color b_texto
+.modal
+    margin-top 20px;
+
+
+
+#wrapper
+  padding-left 0
+  -webkit-transition all 0.5s ease
+  -moz-transition all 0.5s ease
+  -o-transition all 0.5s ease
+  transition all 0.5s ease
+  &.toggled
+    padding-left 250px
+    #sidebar-wrapper
+      width 250px
+    #page-content-wrapper
+      position absolute
+      margin-right -250px
+
+#sidebar-wrapper
+  z-index 1000
+  position fixed
+  left 250px
+  width 0
+  height 100%
+  margin-left -250px
+  overflow-y auto
+  background b_azul
+  -webkit-transition all 0.5s ease
+  -moz-transition all 0.5s ease
+  -o-transition all 0.5s ease
+  transition all 0.5s ease
+
+#page-content-wrapper
+  width 100%
+  position absolute
+  padding 15px
+
+.sidebar-nav
+  position absolute
+  top 0
+  width 250px
+  margin 0
+  padding 0
+  list-style none
+  li
+    text-indent 20px
+    line-height 40px
+    a
+      display block
+      text-decoration none
+      color b_oscuro
+      &:hover
+        text-decoration none
+        color #fff
+        background b_oscuro
+  & > .sidebar-brand
+    height 65px
+    font-size 18px
+    line-height 60px
+    a
+      color b_oscuro
+      &:hover
+        color #fff
+        background b_oscuro
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus
+  text-decoration none
+
+@media(min-width:768px)
+  #wrapper
+    padding-left 250px
+    &.toggled
+      padding-left 0
+      #sidebar-wrapper
+        width 0
+      #page-content-wrapper
+        position relative
+        margin-right 0
+  #sidebar-wrapper
+    width 250px
+  #page-content-wrapper
+    padding 20px
+    position relative
+
+.new-modelLine
+    font-size 25px
+    color b_texto
+
+.model-line
+    border 1px solid #7c9eb2
+    background-color #f8faff
+    padding 10px
+    margin-right 30px
+    line-height 30px
+
+
+
+
+.cle-obligatoriobtn
+    background-color b_cleObligatorio
+    border 1px solid #a0e594
+
+
+.cle-obligatorio
+    background-color b_cleObligatorio
+    padding 4px
+
+    border 1px solid #a0e594
+    cursor pointer
+   // box-shadow 1px 1px 1px #888888
+
+.cle-blanco-head
+    background-color #FFF
+    color #272727
+.cle-obligatorio-head
+    background-color b_cleObligatorio
+    color #272727
+.cle-seleccion-head
+    background-color b_celeSeleccion
+    color #272727
+.cle-opcional-head
+    background-color b_cleOpcional
+    color #272727
+
+
+.cle-seleccionbtn
+    background-color b_celeSeleccion
+    border 1px solid #c89eff
+
+.cle-seleccion
+    background-color b_celeSeleccion
+    padding 4px
+    margin 4px
+    border 1px solid #c89eff
+    //box-shadow 1px 1px 1px #888888
+
+.cle-opcionalbtn
+    background-color b_cleOpcional
+    border 1px solid #e5b386
+
+.cle-opcional
+    background-color b_cleOpcional
+    padding 4px
+    margin 4px
+    border 1px solid #e5b386
+
+    //box-shadow 1px 1px 1px #888888
+
+
+.menu-primero
+    margin-left 15px
+
+.menu-boton
+    background-color #ABD2F3
+    color #002056
+    border 1px solid #82b9e8
+
+
+
+.text-red
+  color #E52A3A
+
+.text-gray
+  color #5f5f5f
+
+.text-center
+  text-align center
+
+.ta-toolbar
+  background-color #fFFF
+  margin -5px;
+  padding 0px;
+  margin-left 0px
+  border 1px solid #EEE
+  .btn-group
+    margin-bottom 5px
+
+.ta-editor, .white-box
+  padding 10px
+  background-color #FFF
+  border 1px solid #EEE
+
+textarea
+  &.ta-bind
+    width 100%
+.red
+  color red
+.titulo
+    font-size 19px
+.ejemplo
+    background-color #f0f3f8
+    padding 10px
+    margin-bottom 15px
+    border 1px solid #f0f3f8
+    border-radius 15px
+    padding-left 15px
+.opciones-menu
+    margin-bottom 15px
+    margin-left  15px
+.modal-texto
+    font-size 13px
+.modal-boton
+    background-color #ABD2F3
+    color #002056
+    border 1px solid #82b9e8
+    font-size 10px
+    padding 5px
+
+.tooltip-inner
+  max-width 490px
+  background-color b_azul
+  color #001539
+  width 490px
+  font-size 15px
+  text-align left
+
+
+
+
+.tooltip-arrow
+  display none
+
+.cabecera-sugerencias
+    background-color b_azul
+    color
+
+.editor
+    border 1px solid #82b9e8
+    padding-top 10px
+    padding-left 5px
+    padding-right 5px
+    padding-bottom 10px
+    border-radius 3px
+    line-height 35px
+.buscar
+    background-color #FFF
+    padding 4px
+    z-index 1050
+    overflow: visible
+
+
+
+.md-obligatorio
+     width 700px
+.md-seleccion
+     max-width 300px
+.md-opcional
+     max-width 300px
+
+.saltoLinea
+    line-height 30px
+.well
+    background-color #ffffff
+
+
+
+
+
+
+
+
+
+
+
+
+

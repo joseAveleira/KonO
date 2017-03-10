@@ -1,0 +1,12 @@
+[
+    {
+        "idUsu":"1",
+        "nombre": "jose",
+        "password": "jose"
+    },
+    {
+        "idUsu":"2",
+        "nombre": "demo",
+        "password": "actres5102"
+    }
+]

@@ -1,0 +1,234 @@
+[
+    {
+        "cle": "año",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "nombre del queso",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "cualidad",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "número",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "animal",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+     {
+        "cle": "raza",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "ingrediente",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "planta",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "proceso",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "peso",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "premio",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+
+    {
+        "cle": "alimento",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "alimentos",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "plato",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "nombre de la bebida",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+     {
+        "cle": "platos",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "nombre de la quesería",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "período de tiempo",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "nombres de la queserías",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "nombres de las queserías",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "objeto que dio nombre al queso",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "siglo",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "personas",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "lugar",
+        "tipo": "obligatorio",
+        "datos": "Buscar",
+        "buscar": ["ciudad", "pais"]
+    },
+
+    {
+        "cle": "color",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "tipo de madera",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "forma",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "origen",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+
+    {
+        "cle": "Should/must",
+        "tipo": "seleccion",
+        "datos": "Seleccionar"
+
+    },
+    {
+        "cle": "yes/no",
+        "tipo": "seleccion",
+        "datos": "Seleccionar"
+
+    },
+
+    {
+        "cle": "correctly",
+        "tipo": "opcional",
+        "datos": "Agregar"
+    },
+
+    {
+        "cle": "tipo de queso",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "tipos de queso",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "uso",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+     {
+        "cle": "metal",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+     {
+        "cle": "certamen",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+     {
+        "cle": "ordinal",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    },
+
+    {
+        "cle": "ciudad",
+        "tipo": "obligatorio",
+        "datos": "Introducir"
+    }
+
+]

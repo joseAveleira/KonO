@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es-ES"  >
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/angular-material/angular-material.css" />
+    <!-- Coloca favicon.ico y apple-touch-icon(s) en el directorio raíz -->
+    <!-- build:css css/style.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/components-font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/menu-lateral.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+
+</head>
+<body ng-app="blablapet" >
+    <div class="col-xs-12" style="margin-top:65px"></div>
+    <div class="visible-xs" style="margin-top:35px"></div>
+
+
+
+
+    <div class="row" ng-view></div>
+
+
+
+
+    <!--[if lt IE 8]>
+<p class="browsehappy">
+Estás usando un navegador <strong>desactualizado</s
+trong>.
+Por favor <a href="http://browsehappy.com/">actuali
+za tu navegador</a>
+Para mejorar la experiencia..
+</p>
+<![endif]-->
+    <!-- build:js js/vendor.min.js -->
+    <!-- bower:js -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/satellizer/satellizer.js"></script>
+    <script src="lib/angular-img-cropper/dist/angular-img-cropper.min.js"></script>
+    <script src="lib/angular-file-model/angular-file-model.js"></script>
+    <!-- endbower -->
+    <script src="lib/textAngular/dist/textAngular-sanitize.min.js"></script>
+
+
+    <script src="lib/angular-touch/angular-touch.min.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <!-- inject:js -->
+    <script src="/componentes/app.js"></script>
+    <script src="/componentes/servername.js"></script>
+    <script src="/componentes/inicio/inicioController.js"></script>
+    <script src="/componentes/inicio/inicioService.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+    <!-- FileSaver.js (necessary for saving the word document!) -->
+    <script src="lib/export/FileSaver.js"></script>
+    <!-- jQuery-Word-Export plugin -->
+    <script src="lib/export/jquery.wordexport.js"></script>
+
+    <script src="lib/export/jspdf.min.js"></script>
+    <script src="lib/export/addimage.js"></script>
+    <script src="lib/export/cell.js"></script>
+    <script src="lib/export/from_html.js"></script>
+    <script src="lib/export/svg.js"></script>
+    <script src="lib/export/split_text_to_size.js"></script>
+    <script src="lib/export/standard_fonts_metrics.js"></script>
+    <script src="lib/angular-aria/angular-aria.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-material/angular-material.js"></script>
+
+
+
+
+</body>
+
+</html>
