@@ -9,17 +9,15 @@
         <i class="users icon"></i> Colabs
     </a>
     <div class="right menu">
-        <a class="item iniciarBtn">
-            <i class="user blue icon"></i> Iniciar Sesion
-        </a>
-        <a class="item registrarseBtn">
-            <i class="add user green icon"></i> Registrarse
+        <a class="item" ng-click="modalInicio()">
+            <i class="circular inverted yellow user icon" style="
+    color: black !important;"></i>
         </a>
     </div>
 </div>
 
 <!-- MODAL -->
-<div class="ui basic modal">
+<div class="ui basic modal modalLogin" ng-init="initModal()">
     <div class="ui orange header loginRotando">
         <i class="huge icons">
             <i class="big loading sun icon"></i>
@@ -40,6 +38,7 @@
             </div>
         </div>
     </div>
+
     <div class="actions">
         ¿Aún no tienes una cuenta?
         <div class="ui blue basic cancel inverted button">

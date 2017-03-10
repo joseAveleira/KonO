@@ -13,6 +13,7 @@
         $scope.despide=function(){
             $scope.prueba='adioss';
         };
+
         $scope.rating=2;
 
         $scope.isActive=function(viewLocation){
@@ -28,9 +29,25 @@
 
             $location.path('/proyectos');
         };
+
         $scope.usuarios = function() {
 
             $location.path('/usuarios');
+        };
+
+        $scope.initModal = function() {
+
+            $('.modalLogin').modal();
+        }
+
+        $scope.modalInicio = function() {
+
+            $('.modalLogin').modal('show');
+        };
+
+        $scope.modalRegistro = function() {
+
+          console.error('En construccion');
         };
     }
 
