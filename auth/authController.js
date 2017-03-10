@@ -45,6 +45,23 @@ module.exports = {
             });
         };
 
+         this.allUser = function (req, res) {
+
+             var usuarios = new conDB.model('usuario');
+
+            usuarios.find({}, function (err, usuarios) {
+                if (err) {
+                    return res.status(500).send(err.message);
+                }
+
+                console.log('  > Listando: ' + usuarios.length);
+                res.status(200).json(usuarios);
+            });
+
+
+
+        };
+
 
 
     }

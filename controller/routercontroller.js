@@ -135,15 +135,14 @@ module.exports = {
 
             router.get('/usuario/:idUsu', function (req, res) {
                 var coleccion = req.originalUrl.split('/')[1];
-                console.log(' \n-Peticion /usuario/:idUsu');
+                console.log(' \n-Peticion GET /usuario/:idUsu');
 
                 autController.user(req, res, coleccion);
             });
             router.get('/usuarios', function (req, res) {
-                var coleccion = req.originalUrl.split('/')[1];
-                console.log(' \n-Peticion /usuario/:idUsu');
+                console.log(' \n-Peticion POST  /usuarios');
 
-                autController.user(req, res, coleccion);
+                autController.allUser(req, res);
             });
 
 
