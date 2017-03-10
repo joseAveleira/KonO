@@ -2,6 +2,7 @@
     {
         "idUsu":"1",
         "nombre": "Matthew Giampietro",
+        "password": "Matthew",
         "area": "Medicina",
         "descripcion":"Matthew es médico residente en Salamanca.",
         "localidad":"León, España",
@@ -11,6 +12,7 @@
     {
         "idUsu":"2",
         "nombre": "Christian Giampietro",
+        "password": "Christian",
         "area": "Electronica",
         "descripcion":"Matthew es médico residente en Salamanca.",
         "localidad":"Madrid, España",
@@ -20,6 +22,7 @@
     {
         "idUsu":"3",
         "nombre": "Kristy",
+        "password":"Kristy",
         "area": "Marketing",
         "descripcion":"Kristy es directora de arte en Almería",
         "localidad":"Almería, España",
