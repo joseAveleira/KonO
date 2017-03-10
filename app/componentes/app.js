@@ -2,7 +2,7 @@
     'use strict';
 
 
-    angular.module('blablapet', ['blablapet.menuController', 'blablapet.proyectosController', 'ngRoute', 'ngSanitize', 'ui.bootstrap', 'ngAnimate', 'ngMaterial', 'satellizer']);
+    angular.module('blablapet', ['blablapet.menuController','blablapet.usuariosController', 'blablapet.proyectosController', 'ngRoute', 'ngSanitize', 'ui.bootstrap', 'ngAnimate', 'ngMaterial', 'satellizer']);
 
     /*
      * Rutas de la aplicacion
@@ -22,7 +22,9 @@
                 controller: 'ProyectosController'
             })
             .when('/usuarios', {
-                templateUrl: 'componentes/usuarios/usuarios.html'
+                templateUrl: 'componentes/usuarios/usuarios.html',
+                controller: 'UsuariosController'
+
             });
 
     }

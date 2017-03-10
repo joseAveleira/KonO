@@ -139,6 +139,12 @@ module.exports = {
 
                 autController.user(req, res, coleccion);
             });
+            router.get('/usuarios', function (req, res) {
+                var coleccion = req.originalUrl.split('/')[1];
+                console.log(' \n-Peticion /usuario/:idUsu');
+
+                autController.user(req, res, coleccion);
+            });
 
 
             var listaCargar = ['/Queso/listacargar/:idUsu', '/Hierba/listacargar/:idUsu', '/Gitec/listacargar/:idUsu'];
