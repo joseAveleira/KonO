@@ -14,3 +14,18 @@
 .ui.oscuro.secondary.inverted.menu {
     background-color: #343434;
 }
+
+.iniciarBtn {
+
+    background-color: #7ba1bd !important;
+}
+
+.registrarseBtn {
+
+    background-color: #549254 !important;
+}
+
+.iniciarBtn:hover, .registrarseBtn:hover {
+
+    background-color: rgba(200, 200, 200, 1) !important;
+}

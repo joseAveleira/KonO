@@ -1,4 +1,4 @@
-<div class="ui oscuro secondary inverted labeled icon menu" ng-controller="MenuController">
+<div class="ui inverted labeled icon menu oscuro" ng-controller="MenuController">
   <a class="item" ng-click="inicio()" ng-class="{active: isActive('/')}">
       <i class="home yellow icon"></i>
       Inicio
@@ -7,13 +7,17 @@
       <i class="browser icon"></i>
       Proyectos
   </a>
+  <a class="item" ng-click="usuarios()" ng-class="{active: isActive('/usuarios')}">
+      <i class="users icon"></i>
+      Colabs
+  </a>
   <div class="right menu">
-    <a class="item">
-      <i class="browser icon"></i>
+    <a class="item iniciarBtn">
+      <i class="user blue icon"></i>
       Iniciar Sesion
     </a>
-    <a class="item">
-      <i class="browser icon"></i>
+    <a class="item registrarseBtn">
+      <i class="add user green icon"></i>
       Registrarse
     </a>
   </div>
