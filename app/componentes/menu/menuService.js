@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('blablapet.inicioService', ['ngResource', 'blablapet.servername']);
+    angular.module('blablapet.menuService', ['ngResource', 'blablapet.servername']);
     /*
      * Guarda el id y el nombre del CLE seleccionado
      */
@@ -12,7 +12,7 @@
     }
 
     angular
-        .module('blablapet.inicioService')
+        .module('blablapet.menuService')
 
         .factory('UserData', UserData);
 

@@ -2,7 +2,7 @@
     'use strict';
 
 
-    angular.module('blablapet', ['blablapet.inicioController','ngRoute', 'ngSanitize', 'ui.bootstrap', 'ngAnimate', 'ngMaterial', 'satellizer']);
+    angular.module('blablapet', ['blablapet.menuController','ngRoute', 'ngSanitize', 'ui.bootstrap', 'ngAnimate', 'ngMaterial', 'satellizer']);
 
     /*
      * Rutas de la aplicacion
@@ -15,10 +15,11 @@
         $routeProvider
         // En raiz vista del menu y las sugerencias
             .when('/', {
-                templateUrl: 'componentes/inicio/inicio.html',
-                controller: 'InicioController'
+                templateUrl: 'componentes/inicio/inicio.html'
+            })
+            .when('/proyectos', {
+                templateUrl: 'componentes/proyectos/proyectos.html'
             });
-
 
     }
     angular

@@ -1,0 +1,16 @@
+<div class="ui oscuro secondary inverted labeled icon menu" ng-controller="MenuController">
+  <a class="item" ng-click="inicio()" ng-class="{active: isActive('/')}">
+      <i class="home yellow icon"></i>
+      Inicio
+  </a>
+  <a class="item" ng-click="proyectos()" ng-class="{active: isActive('/proyectos')}">
+      <i class="browser icon"></i>
+      Proyectos
+  </a>
+  <div class="right menu">
+    <a class="item">
+        <i class="power red icon"></i>
+        Desconectar
+    </a>
+  </div>
+</div>
