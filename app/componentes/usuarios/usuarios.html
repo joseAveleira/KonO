@@ -1,5 +1,5 @@
-<div class="ui special cards">
-  <div class="card cardUsuario" ng-init="dimmer()">
+<div class="ui special cards" >
+  <div class="card cardUsuario" ng-init="dimmer()" ng-repeat="usuario in allUsers">
     <div class="blurring dimmable image" style="cursor: pointer;">
       <div class="ui dimmer">
         <div class="content">
@@ -8,24 +8,24 @@
           </div>
         </div>
       </div>
-      <img src="../../img/matthew.png">
+      <img src="../../img/{{usuario.imagen}}">
     </div>
     <div class="content">
-      <a class="header">Matthew Giampietro</a>
+      <a class="header">{{usuario.nombre}}</a>
       <div class="meta">
-        <a>Medicina</a>
+        <a>{{usuario.area}}</a>
       </div>
         <div class="description">
-                Matthew es médico residente en Salamanca.
+               {{usuario.descripcion}}
             </div>
     </div>
     <div class="extra content">
             <span class="right floated">
-        <rating id="my-rating" size="large" type="star" ng-model="rating"></rating>
+        <rating id="my-rating{{usuario.idUsu}}" size="large" type="star" ng-model="usuario.estrellas"></rating>
       </span>
             <span>
         <i class="building icon"></i>
-        León, España
+         {{usuario.localidad}}
       </span>
         </div>
   </div>

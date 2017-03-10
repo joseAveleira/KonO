@@ -10,15 +10,28 @@ var mongoose = require('mongoose'),
  */
 var usuariosSchema = new Schema({
 
+    idUsu: {
+        type: Number
+    },
     nombre: {
         type: String
     },
-    password: {
+    area: {
         type: String
     },
-    idUsu: {
+    descripcion: {
         type: String
+    },
+    localidad: {
+        type: String
+    },
+    imagen: {
+        type: String
+    },
+    estrellas: {
+        type: Number
     }
+
 });
 // el nombre es el de la coleccion pero en singular
 module.exports = mongoose.model('usuario', usuariosSchema);

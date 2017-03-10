@@ -1,12 +1,29 @@
 [
     {
         "idUsu":"1",
-        "nombre": "jose",
-        "password": "jose"
+        "nombre": "Matthew Giampietro",
+        "area": "Medicina",
+        "descripcion":"Matthew es médico residente en Salamanca.",
+        "localidad":"León, España",
+        "imagen":"matthew.png",
+        "estrellas":5
     },
     {
         "idUsu":"2",
-        "nombre": "demo",
-        "password": "actres5102"
+        "nombre": "Christian Giampietro",
+        "area": "Electronica",
+        "descripcion":"Matthew es médico residente en Salamanca.",
+        "localidad":"Madrid, España",
+        "imagen":"christian.jpg",
+        "estrellas":4
+    },
+    {
+        "idUsu":"3",
+        "nombre": "Kristy",
+        "area": "Marketing",
+        "descripcion":"Kristy es directora de arte en Almería",
+        "localidad":"Almería, España",
+        "imagen":"kristy.png",
+        "estrellas":5
     }
 ]

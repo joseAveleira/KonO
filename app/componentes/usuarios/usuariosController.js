@@ -6,15 +6,19 @@
     /*
      *  Controla el foco de la cabecera
      */
-    function UsuariosController($scope, $location,AllUsers) {
+    function UsuariosController($scope, $location, AllUsers) {
 
-        //$scope.AllUsers=AllProjects.query();
-        console.log(AllUsers.query());
+        $scope.allUsers = AllUsers.query();
 
-        $scope.dimmer = function() {
+        $scope.rating = function () {
+            // All your normal JS code goes in here
+            $(".rating").rating();
+        }
+
+        $scope.dimmer = function () {
 
             $('.special.cards .image').dimmer({
-              on: 'hover'
+                on: 'hover'
             });
         };
 
