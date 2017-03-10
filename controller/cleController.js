@@ -57,8 +57,8 @@ module.exports = {
         /*
          * Devuleve todos los CLE
          */
-        this.allCle = function (req, res,coleccion) {
-            var celes = new conDB.model('cle' + coleccion);
+        this.allProyectos = function (req, res,coleccion) {
+            var celes = new conDB.model('proyecto');
 
             celes.find({}, function (err, sugerencia) {
                 if (err) {

@@ -56,11 +56,10 @@ module.exports = {
             });
 
 
-            var cle = ['/Queso/Cle', '/hierba/Cle', '/Gitec/Cle'];
-            router.get(cle, function (req, res) {
-                var coleccion = req.originalUrl.split('/')[1];
-                console.log(' \n-Peticion ' + colors.magenta('GET') + ' /' + coleccion + '/Cle');
-                cleController.allCle(req, res, coleccion);
+
+            router.get('/proyectos', function (req, res) {
+                console.log(' \n-Peticion /proyectos');
+                cleController.allProyectos(req, res);
             });
 
 

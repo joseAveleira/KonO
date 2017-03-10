@@ -8,26 +8,19 @@ var mongoose = require('mongoose'),
  * Formato de la estructura modelLine
  */
 var cleSchema = new Schema({
-    cle: {
+    nombre: {
         type: String
     },
-    buscar: {
+    descripcion: {
         type: Array
     },
-    tipo: {
+    image: {
         type: String
-    },
-    datos: {
-        type: String
-    },
-
-    diccionario: {
-        type: Array
     }
 
 
 });
 // el nombre es el de la coleccion pero en singular
-module.exports = mongoose.model('cleQueso', cleSchema);
+module.exports = mongoose.model('proyecto', cleSchema);
 module.exports = mongoose.model('cleHierba', cleSchema);
 module.exports = mongoose.model('cleGitec', cleSchema);
