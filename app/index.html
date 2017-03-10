@@ -86,7 +86,6 @@ Para mejorar la experiencia..
     <script type="text/javascript">
 
         $(document).ready(function(){
-            // All your normal JS code goes in here
 
             console.log("Cargado");
 
@@ -98,6 +97,15 @@ Para mejorar la experiencia..
             $(".appWrapper").on("click", ".iniciarBtn", function() {
 
                 $('.ui.modal').modal('show');
+            });
+
+            $(".appWrapper").on("click", '.special.cards .image', function() {
+
+                $('.special.cards .image').dimmer({
+
+                    on: 'hover'
+                });
+
             });
         });
     </script>
