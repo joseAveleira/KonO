@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('blablapet.menuController', ['blablapet.menuService','angularify.semantic.rating' ]);
+        .module('blablapet.menuController', ['blablapet.menuService','angularify.semantic.rating','angularify.semantic.dropdown' ]);
 
     /*
      *  Controla el foco de la cabecera

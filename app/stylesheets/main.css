@@ -1,3 +1,16 @@
+.appWrapper {
+
+    background-color: lightgray;
+}
+
+.vistasWrapper > .ui.items > .item {
+
+    width: initial;
+    margin: 15px;
+    padding: 10px 15px;
+    background-color: white;
+}
+
 .ui.oscuro.secondary.inverted.menu {
     background-color: #343434;
 }
