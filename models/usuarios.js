@@ -21,6 +21,4 @@ var usuariosSchema = new Schema({
     }
 });
 // el nombre es el de la coleccion pero en singular
-module.exports = mongoose.model('usuariosQueso', usuariosSchema);
-module.exports = mongoose.model('usuariosHierba', usuariosSchema);
-module.exports = mongoose.model('usuariosGitec', usuariosSchema);
+module.exports = mongoose.model('usuario', usuariosSchema);

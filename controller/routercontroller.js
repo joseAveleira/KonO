@@ -134,10 +134,9 @@ module.exports = {
             });
 
 
-            var usuario = ['/Queso/usuario/:idUsu', '/Hierba/usuario/:idUsu', '/Gitec/usuario/:idUsu'];
-            router.get(usuario, function (req, res) {
+            router.get('/usuario/:idUsu', function (req, res) {
                 var coleccion = req.originalUrl.split('/')[1];
-                console.log(' \n-Peticion ' + colors.magenta('GET') + ' /' + coleccion + '/usuario/:idUsu');
+                console.log(' \n-Peticion /usuario/:idUsu');
 
                 autController.user(req, res, coleccion);
             });

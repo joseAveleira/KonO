@@ -37,8 +37,9 @@ module.exports = {
             });
         };
 
-        this.user = function (req, res, coleccion) {
-            var usuarios = new conDB.model('usuarios' + coleccion);
+        this.user = function (req, res) {
+            console.log(req.params);
+            var usuarios = new conDB.model('usuario');
             usuarios.findOne(req.params, function (err, usuario) {
                 return res.status(200).json(usuario);
             });
