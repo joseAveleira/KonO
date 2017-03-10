@@ -12,7 +12,7 @@ var cleSchema = new Schema({
         type: String
     },
     descripcion: {
-        type: Array
+        type: String
     },
     image: {
         type: String
@@ -22,5 +22,4 @@ var cleSchema = new Schema({
 });
 // el nombre es el de la coleccion pero en singular
 module.exports = mongoose.model('proyecto', cleSchema);
-module.exports = mongoose.model('cleHierba', cleSchema);
-module.exports = mongoose.model('cleGitec', cleSchema);
+

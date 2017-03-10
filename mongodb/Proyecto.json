@@ -2,11 +2,17 @@
     {
         "nombre":"Cono",
         "descripcion": "cono de conos con conos",
-        "image": "jose"
+        "image": "noimage.png"
     },
     {
-        "idUsu":"cono dos",
-        "nombre": "dos conos con conos ",
-        "image": "actres5102"
+        "nombre":"cono dos",
+        "descripcion": "dos conos con conos ",
+        "image": "noimage.png"
+    }
+    ,
+    {
+        "nombre":"Tres",
+        "descripcion": "dos maskldfjlk  con conos ",
+        "image": "noimage.png"
     }
 ]

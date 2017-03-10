@@ -6,24 +6,11 @@
     /*
      *  Controla el foco de la cabecera
      */
-    function ProyectosController($scope, UserData, $location) {
+    function ProyectosController($scope, UserData, $location,AllProjects) {
 
+        $scope.allprojects=AllProjects.query();
+       // console.log(AllProyects.query());
 
-        $scope.rating = 2;
-
-        $scope.isActive = function (viewLocation) {
-            return viewLocation === $location.path();
-        };
-
-        $scope.inicio = function () {
-
-            $location.path('/');
-        };
-
-        $scope.proyectos = function () {
-
-            $location.path('/proyectos');
-        };
     }
 
     angular

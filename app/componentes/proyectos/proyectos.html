@@ -1,13 +1,14 @@
-<div class="ui items">
+
+<div class="ui items" ng-repeat="proyecto in allprojects">
   <div class="item">
     <a class="ui small image">
       <!--<img src="../../img/{{proyecto-imagen}}">-->
-      <img src="../../img/noimage.png">
+      <img src="../../img/{{proyecto.image}}">
     </a>
     <div class="content">
-      <a class="header">{{proyecto-nombre}}</a>
+      <a class="header">{{proyecto.nombre}}</a>
       <div class="description">
-        <p>{{proyecto-descripcion}}</p>
+        <p>{{proyecto.descripcion}}</p>
       </div>
       <div class="extra">
         <rating id="my-rating" size="large" type="star" ng-model="rating"></rating>
