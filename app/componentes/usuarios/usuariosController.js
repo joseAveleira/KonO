@@ -9,7 +9,7 @@
     function UsuariosController($scope, $location,AllUsers) {
 
         //$scope.AllUsers=AllProjects.query();
-        console.log(AllProyects.query());
+        console.log(AllUsers.query());
 
     }
 
