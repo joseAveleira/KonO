@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('blablapet.menuController', ['blablapet.menuService' ]);
+        .module('blablapet.menuController', ['blablapet.menuService','angularify.semantic.rating' ]);
 
     /*
      *  Controla el foco de la cabecera
@@ -13,6 +13,7 @@
         $scope.despide=function(){
             $scope.prueba='adioss';
         };
+        $scope.rating=2;
 
         $scope.isActive=function(viewLocation){
             return viewLocation === $location.path();
