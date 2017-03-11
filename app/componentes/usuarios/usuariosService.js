@@ -12,7 +12,7 @@
     }
 
    function Mysocket($rootScope,Nameserver){
-		var socket = io.connect('http://localhost:3000');
+		var socket = io.connect('http://178.62.82.186:3000');
 		//var socket = io.connect('http://localhost:4041');
 		return {
 			on: function(eventName, callback){

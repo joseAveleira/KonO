@@ -62,6 +62,7 @@
                             console.log('dato '+data.nombre);
 
                             $scope.usuario=data.nombre;
+                           User.setNombre(data.nombre,data.idUsu);
                             $scope.activar=true;
 
 

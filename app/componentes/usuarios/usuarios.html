@@ -42,14 +42,15 @@
         </div>
         <div class="description">
             <div class="ui form">
+                <div style="height:250px;font-size:20px"><p ng-bind-html="resultado"></p></div>
                 <div class="two fields">
                     <div class="field">
 
-                        <input placeholder="Escribe tu mensaje" type="text">
+                        <input placeholder="Escribe tu mensaje" type="text" ng-model="textoChat">
                     </div>
                     <div class="field">
 
-                        <div class="ui submit button">Enviar</div>
+                        <div class="ui submit button"   ng-click="enviarChat()"><i class="comments send  icon" ></i>Enviar</div>
                     </div>
                 </div>
 

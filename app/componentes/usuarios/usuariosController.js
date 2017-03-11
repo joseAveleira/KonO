@@ -1,21 +1,25 @@
 (function () {
     'use strict';
     angular
-        .module('blablapet.usuariosController', ['blablapet.usuariosService']);
+        .module('blablapet.usuariosController', ['blablapet.usuariosService','blablapet.menuService']);
 
     /*
      *  Controla el foco de la cabecera
      */
-    function UsuariosController($scope, $location, AllUsers, Mysocket) {
+    function UsuariosController($scope, $location, AllUsers, Mysocket,User) {
 
 
-        $scope.cambio = function () {
-            Mysocket.emit('qrmensaje', $scope.nombre);
+        $scope.enviarChat = function () {
+
+            console.log(User.getNombre())
+            Mysocket.emit('chatmessage','<b>'+User.getNombre()+'</b>: '+$scope.textoChat+'<br/>');
+            $scope.textoChat=''
         };
 
-        Mysocket.on('qrmensaje2', function (data) {
+        $scope.resultado='';
+        Mysocket.on('chatmessage', function (data) {
             $scope.$apply(function () {
-                $scope.resultado = data;
+                $scope.resultado += data;
             });
         });
 
