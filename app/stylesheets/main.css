@@ -52,7 +52,7 @@ html, body, .appWrapper {
 .logoGrande {
 
     width: 100vw !important;
-    margin: 15px -15px 15px -15px !important;
+    margin: -15px -15px 15px -15px !important;
     padding: 0 !important;
     background-color: #2a2a2a !important;
 }

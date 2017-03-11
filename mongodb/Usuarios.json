@@ -59,5 +59,35 @@
 	"localidad" : "Ávila, España",
 	"nombre" : "Daniel",
     "password":"Daniel"
+},
+{
+	"area" : "Ingeniero de caminos",
+	"descripcion" : "Stevie trabaja como ingeniero en Dragados",
+	"estrellas" : 1,
+	"idUsu" : "7",
+	"imagen" : "stevie.jpg",
+	"localidad" : "Málaga, España",
+	"nombre" : "Stevie",
+    "password":"Stevie"
+},
+{
+	"area" : "Abogado",
+	"descripcion" : "Veronika trabaja como abogada en O'grove",
+	"estrellas" : 2,
+	"idUsu" : "8",
+	"imagen" : "veronika.jpg",
+	"localidad" : "Pontevedra, España",
+	"nombre" : "Veronika",
+    "password":"Veronika"
+},
+{
+	"area" : "Futbolista",
+	"descripcion" : "Joe juega a futbol en el equipo local de su ciudad",
+	"estrellas" : 5,
+	"idUsu" : "9",
+	"imagen" : "joe.jpg",
+	"localidad" : "Las Palmas, España",
+	"nombre" : "Joe",
+    "password":"Joe"
 }
 ]

@@ -1,34 +1,25 @@
 [{
 
-	"descripcion" : "Me hace clin clin clin en frio menos casi ni se siente en caliente suena mas apreto el embrague y deja de hacerlo lo lleve a mi mecanico y me dice q son los engranajes de caja q vibra y hace ruido y q pregunte a alguien si le metia un aceite mas pesado no funda la caja ayudenmen hace 2 semanas q tengo el coche gracias",
-	"dudas" : 12,
-	"image" : "coche.jpg",
-	"nombre" : "Fallo Citroen C4",
+	"descripcion" : "Las personas invidentes o personas que presentan algún tipo de problema visual, no pueden consultar el prospecto de los medicamentos, ya que la letra de los mismos es demasiado pequeña. Además las personas invidentes no pueden consultar esto de ninguna forma, ya que las instrucciones no están en braille. El objetivo de este reto, es diseñar una APP que sea capaz de reconocer el medicamento de una forma sencilla y reproducir mediante instrucciones de voz toda la información relevante.",
+	"dudas" : 17,
+	"image" : "medico.png",
+	"nombre" : "Reconocimiento de Medicamentos con un Móvil",
+    "fecha" : "11 de Marzo de 2017",
 	"tags" : [
-		"Mecánica",
-		"Automoción",
-		"Citroen",
-		"Coches",
-		"Motor"
+		"Medicina",
+		"app",
+		"Ciegos",
+		"Invidentes",
+		"Medicamentos"
 	],
-	"vistas" : 136
-},
-{
-
-	"descripcion" : "dos conos con conos ",
-	"dudas" : 2,
-	"image" : "noimage.png",
-	"nombre" : "cono dos",
-	"tags" : [
-		""
-	],
-	"vistas" : 0
+	"vistas" : 87
 },
 {
 	"descripcion" : "El asunto es que quiero hacerme una embarcación de esta eslora y no se por cual decidirme (el precio es fundamental). no puedo comprarla y quedarmela, pero si puedo comprar una, hacer el molde y despues un barco a mi manera (mucho mas robusto y con muchisimas mejoras) y despues vender el original.",
 	"dudas" : 30,
-	"image" : "barco.jpg",
+	"image" : "barco.png",
 	"nombre" : "Construir un barco",
+    "fecha" : "20 de Julio de 2016",
 	"tags" : [
 		"Ingenieria Naval",
 		"Barcos",
@@ -37,4 +28,35 @@
 		"Puertos"
 	],
 	"vistas" : 69
+},
+{
+
+	"descripcion" : "creación de un satélite artificial, o un anillo planetario capaz de redirigir la energía solar en horarios nocturnos para continuar con la generacion de energía solar durante todo el día",
+	"dudas" : 2,
+	"image" : "deathstar.png",
+	"nombre" : "Death Star",
+    "fecha" : "4 de Diciembre de 2016",
+	"tags" : [
+		"Guerra de las galaxias",
+		"Star Wars",
+		"Satélite",
+		"Espacio"
+	],
+	"vistas" : 0
+},
+{
+	"descripcion" : "Crear una aplicación que ayude a los usuarios a tener controlados los alimentos que tiene en casa, su composición o los posibles alergenos que pueda tener, y su fecha de caducidad. Con esta app podemos ayudar a ahorrar a las personas, colaborar con el medio ambiente y además, poder ayudar a adquirir rápidamente alimentos saludables para alergicos o intolerantes a alguna clase de alimentos con solo escanear su código de barras.",
+	"dudas" : 12,
+	"image" : "food.png",
+	"nombre" : "SmartFood",
+    "fecha" : "5 de Abril de 2016",
+	"tags" : [
+		"Comida",
+		"Alimentos",
+		"Fecha de Caducidad",
+		"Ahorrar",
+		"Salud",
+        "Alergias"
+	],
+	"vistas" : 13
 }]
