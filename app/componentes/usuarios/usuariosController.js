@@ -11,9 +11,9 @@
 
         $scope.enviarChat = function () {
 
-            console.log(User.getNombre())
+            console.log(User.getNombre());
             Mysocket.emit('chatmessage','<b>'+User.getNombre()+'</b>: '+$scope.textoChat+'<br/>');
-            $scope.textoChat=''
+            $scope.textoChat='';
         };
 
         $scope.resultado='';
@@ -27,8 +27,8 @@
 
         $scope.rating = function () {
             // All your normal JS code goes in here
-            $(".rating").rating();
-        }
+            $('.rating').rating();
+        };
 
         $scope.dimmer = function () {
 
@@ -39,7 +39,8 @@
 
         $scope.initModalChat = function () {
             $('.modalChat').modal();
-        }
+        };
+
         $scope.modalChat = function (usuarioChat, usuarioChatIMG) {
             console.log(usuarioChatIMG);
             $scope.usuarioChatIMG = usuarioChatIMG;
@@ -48,10 +49,15 @@
             $('.modalChat')
                 .modal('setting', 'transition', 'horizontal flip')
                 .modal('show');
-
-
         };
 
+        $scope.enviarEnter = function(keyEvent) {
+          if (keyEvent.which === 13) {
+
+              console.log('holaaa');
+              $scope.enviarChat();
+          }
+        };
 
     }
 

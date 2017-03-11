@@ -40,33 +40,19 @@
         <div class="ui medium image">
             <img src="../../img/{{usuarioChatIMG}}">
         </div>
-        <div class="description">
+        <div class="description" style="width: 100%;">
             <div class="ui form">
-                <div style="height:250px;font-size:20px"><p ng-bind-html="resultado"></p></div>
-                <div class="two fields">
-                    <div class="field">
-
-                        <input placeholder="Escribe tu mensaje" type="text" ng-model="textoChat">
-                    </div>
-                    <div class="field">
-
-                        <div class="ui submit button"   ng-click="enviarChat()"><i class="comments send  icon" ></i>Enviar</div>
-                    </div>
+                <div style="height:250px;font-size:20px">
+                    <p ng-bind-html="resultado"></p>
                 </div>
 
             </div>
-        </div>
-    </div>
-    <div class="actions">
-        <div class="ui black deny button">
-            Nope
-        </div>
-        <div class="ui positive right labeled icon button">
-            Yep, that's me
-            <i class="checkmark icon"></i>
+            <div class="ui fluid action input">
+                <input placeholder="Escribe tu mensaje" type="text" ng-model="textoChat" ng-keypress="enviarEnter($event)">
+                <div class="ui submit button" ng-click="enviarChat()"><i class="comments send icon"></i>Enviar</div>
+            </div>
         </div>
     </div>
 </div>
-
 
 
