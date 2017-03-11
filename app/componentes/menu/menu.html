@@ -8,16 +8,18 @@
     <a class="item" ng-click="usuarios()" ng-class="{active: isActive('/usuarios')}">
         <i class="users icon"></i> Colabs
     </a>
+    Hola:{{nombre}}
     <div class="right menu">
         <a class="item" ng-click="modalInicio()">
             <i class="circular inverted yellow user icon" style="
     color: black !important;"></i>
         </a>
+
     </div>
 </div>
 
 <!-- MODAL -->
-<div class="ui basic modal modalLogin" ng-init="initModal()">
+<div class="ui basic modal modalLogin" ng-init="initModal()" ng-controller="MenuController">
     <div class="ui orange header loginRotando">
         <i class="huge icons">
             <i class="big loading sun icon"></i>
@@ -31,15 +33,15 @@
     <div class="content">
         <div class="ui form">
             <div class="field">
-                <input type="text" placeholder="Nombre de Usuario">
+                <input type="text" placeholder="Nombre de Usuario" ng-model="usuario">
             </div>
             <div class="field">
-                <input type="password" placeholder="Contraseña">
+                <input type="password" placeholder="Contraseña" ng-model="password">
             </div>
         </div>
     </div>
 
-    <div class="actions">
+    <div class="actions" >
         ¿Aún no tienes una cuenta?
         <div class="ui blue basic cancel inverted button">
             <i class="plus icon"></i> Registrate
@@ -47,7 +49,7 @@
         <div class="ui red ok inverted button">
             <i class="remove icon"></i> Cancelar
         </div>
-        <div class="ui green ok inverted button">
+        <div class="ui green ok inverted button" ng-click="login()" >
             <i class="checkmark icon"></i> Iniciar
         </div>
     </div>

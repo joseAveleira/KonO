@@ -40,8 +40,31 @@ module.exports = {
         this.user = function (req, res) {
             console.log(req.params);
             var usuarios = new conDB.model('usuario');
-            usuarios.findOne(req.params, function (err, usuario) {
+            usuarios.findOne({
+                $and: [{
+                    nombre: req.body.nombre
+            }, {
+                    password: req.body.password
+                }]
+            }, function (err, usuario) {
                 return res.status(200).json(usuario);
+            });
+        };
+
+        this.loginf = function (req, res) {
+            console.log('  > nombre: ' + req.params.nombre);
+            console.log('  > password: ' + req.params.password);
+
+            var usuarios = new conDB.model('usuario');
+             usuarios.findOne({
+                $and: [req.params]
+            }, function (err, sugerencia) {
+                if (err) {
+                    return res.status(500).send(err.message);
+                }
+
+                res.status(200).json(sugerencia);
+
             });
         };
 

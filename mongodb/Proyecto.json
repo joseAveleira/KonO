@@ -1,18 +1,40 @@
-[
-    {
-        "nombre":"Cono",
-        "descripcion": "cono de conos con conos",
-        "image": "noimage.png"
-    },
-    {
-        "nombre":"cono dos",
-        "descripcion": "dos conos con conos ",
-        "image": "noimage.png"
-    }
-    ,
-    {
-        "nombre":"Tres",
-        "descripcion": "dos maskldfjlk  con conos ",
-        "image": "noimage.png"
-    }
-]
+[{
+
+	"descripcion" : "Me hace clin clin clin en frio menos casi ni se siente en caliente suena mas apreto el embrague y deja de hacerlo lo lleve a mi mecanico y me dice q son los engranajes de caja q vibra y hace ruido y q pregunte a alguien si le metia un aceite mas pesado no funda la caja ayudenmen hace 2 semanas q tengo el coche gracias",
+	"dudas" : 12,
+	"image" : "coche.jpg",
+	"nombre" : "Fallo Citroen C4",
+	"tags" : [
+		"Mecánica",
+		"Automoción",
+		"Citroen",
+		"Coches",
+		"Motor"
+	],
+	"vistas" : 136
+},
+{
+
+	"descripcion" : "dos conos con conos ",
+	"dudas" : 2,
+	"image" : "noimage.png",
+	"nombre" : "cono dos",
+	"tags" : [
+		""
+	],
+	"vistas" : 0
+},
+{
+	"descripcion" : "El asunto es que quiero hacerme una embarcación de esta eslora y no se por cual decidirme (el precio es fundamental). no puedo comprarla y quedarmela, pero si puedo comprar una, hacer el molde y despues un barco a mi manera (mucho mas robusto y con muchisimas mejoras) y despues vender el original.",
+	"dudas" : 30,
+	"image" : "barco.jpg",
+	"nombre" : "Construir un barco",
+	"tags" : [
+		"Ingenieria Naval",
+		"Barcos",
+		"Astilleros",
+		"Yates",
+		"Puertos"
+	],
+	"vistas" : 69
+}]

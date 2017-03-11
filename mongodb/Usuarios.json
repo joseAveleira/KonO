@@ -1,32 +1,32 @@
-[
-    {
-        "idUsu":"1",
-        "nombre": "Matthew Giampietro",
-        "password": "Matthew",
-        "area": "Medicina",
-        "descripcion":"Matthew es médico residente en Salamanca.",
-        "localidad":"León, España",
-        "imagen":"matthew.png",
-        "estrellas":5
-    },
-    {
-        "idUsu":"2",
-        "nombre": "Christian Giampietro",
-        "password": "Christian",
-        "area": "Electronica",
-        "descripcion":"Matthew es médico residente en Salamanca.",
-        "localidad":"Madrid, España",
-        "imagen":"christian.jpg",
-        "estrellas":4
-    },
-    {
-        "idUsu":"3",
-        "nombre": "Kristy",
-        "password":"Kristy",
-        "area": "Marketing",
-        "descripcion":"Kristy es directora de arte en Almería",
-        "localidad":"Almería, España",
-        "imagen":"kristy.png",
-        "estrellas":5
-    }
-]
+[{
+
+	"area" : "Medicina",
+	"descripcion" : "Matthew es médico residente en Salamanca.",
+	"estrellas" : 5,
+	"idUsu" : "1",
+	"imagen" : "matthew.png",
+	"localidad" : "León, España",
+	"nombre" : "Matthew Giampietro",
+    "password":"Matthew"
+},
+{
+
+	"area" : "Electronica",
+	"descripcion" : "Christian es técnico electrónico en Siemens Madrid.",
+	"estrellas" : 4,
+	"idUsu" : "2",
+	"imagen" : "christian.jpg",
+	"localidad" : "Madrid, España",
+	"nombre" : "Pepe",
+    "password":"Pepe"
+},
+{
+	"area" : "Marketing",
+	"descripcion" : "Kristy es directora de arte en Almería",
+	"estrellas" : 5,
+	"idUsu" : "3",
+	"imagen" : "kristy.png",
+	"localidad" : "Almería, España",
+	"nombre" : "Ana",
+    "password":"Ana"
+}]
