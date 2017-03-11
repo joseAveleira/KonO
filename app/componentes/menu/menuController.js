@@ -58,12 +58,12 @@
                 .$promise.then(
                     function (data) {
 
-                        if (data.nombre !== undefined) {
+
                             console.log('dato '+data.nombre)
 
-                            $scope.nombre=data.nombre;
-                             $location.path('/');
-                        }
+                            $scope.usuario=data.nombre;
+
+
                     }
                 );
 
