@@ -29,4 +29,35 @@
 	"localidad" : "Almería, España",
 	"nombre" : "Ana",
     "password":"Ana"
-}]
+},
+{
+	"area" : "Derecho",
+	"descripcion" : "Azul tiene un bufete de abogados en Cadiz",
+	"estrellas" : 2,
+	"idUsu" : "4",
+	"imagen" : "azul.jpg",
+	"localidad" : "Cadiz, España",
+	"nombre" : "Azul",
+    "password":"Azul"
+},
+{
+	"area" : "Informática",
+	"descripcion" : "Molly es diseñadora gráfica en Ávila",
+	"estrellas" : 5,
+	"idUsu" : "5",
+	"imagen" : "molly.png",
+	"localidad" : "Ávila, España",
+	"nombre" : "Molly",
+    "password":"Molly"
+},
+ {
+	"area" : "Carpintero",
+	"descripcion" : "Daniel es carpintero en Ávila",
+	"estrellas" : 3,
+	"idUsu" : "6",
+	"imagen" : "daniel.jpg",
+	"localidad" : "Ávila, España",
+	"nombre" : "Daniel",
+    "password":"Daniel"
+}
+]
