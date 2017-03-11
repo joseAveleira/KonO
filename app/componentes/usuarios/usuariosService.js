@@ -11,18 +11,18 @@
         });
     }
 
-    function Mysocket($rootScope,Nameserver) {
-        var socket = io.connect(Nameserver.name);
-        //var socket = io.connect('http://localhost:4041');
-        return {
-            on: function (eventName, callback) {
-                socket.on(eventName, callback);
-            },
-            emit: function (eventName, data) {
-                socket.emit(eventName, data);
-            }
-        };
-    }
+   function Mysocket($rootScope,Nameserver){
+		var socket = io.connect('http://localhost:3000');
+		//var socket = io.connect('http://localhost:4041');
+		return {
+			on: function(eventName, callback){
+				socket.on(eventName, callback);
+			},
+			emit: function(eventName, data) {
+				socket.emit(eventName, data);
+			}
+		};
+	}
 
     angular
         .module('blablapet.usuariosService')

@@ -6,7 +6,7 @@ var cle = require('./cleController');
 var save = require('./guardarController');
 var auth = require('../auth/authController');
 var middleware = require('../auth/middleware');
-var qr = require('./qrController');
+
 
 
 
@@ -15,9 +15,8 @@ module.exports = {
         var router = express.Router();
         var dbHandler = pDBHandler.getConexion();
         var cleController = new cle.CLEController(dbHandler);
-        var autController = new auth.AuthController(dbHandler);
-        var qrController = new qr.QrController(dbHandler),
-        io = null;
+        var autController = new auth.AuthController(dbHandler),
+            io = null;
 
 
         this.getRouter = function () {
@@ -32,7 +31,11 @@ module.exports = {
 
         this.configureRoutes = function () {
 
+                io.on('connection',function(Mysocket){
 
+
+
+            });
             router.get('/proyectos', function (req, res) {
                 console.log(' \n-Peticion /proyectos');
                 cleController.allProyectos(req, res);
@@ -40,10 +43,6 @@ module.exports = {
 
 
 
-            router.get('/qr', function (req, res) {
-                console.log('\n Peticion GET  /QR');
-                qrController.mensajes(req, res, io);
-            });
 
             router.get('/login/:nombre/:password', function (req, res) {
 

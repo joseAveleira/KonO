@@ -6,11 +6,13 @@
     /*
      *  Controla el foco de la cabecera
      */
-    function UsuariosController($scope, $location, AllUsers,Mysocket) {
+    function UsuariosController($scope, $location, AllUsers, Mysocket) {
 
 
-        $scope.nombre = 'aaafa';
-        Mysocket.emit('qrmensaje', $scope.nombre);
+        $scope.cambio = function () {
+            Mysocket.emit('qrmensaje', $scope.nombre);
+        };
+
         Mysocket.on('qrmensaje2', function (data) {
             $scope.$apply(function () {
                 $scope.resultado = data;

@@ -8,7 +8,7 @@
      */
     function MenuController($scope, User, UserData, $location) {
 
-
+        $scope.activar=false;
 
         $scope.isActive = function (viewLocation) {
             return viewLocation === $location.path();
@@ -62,6 +62,7 @@
                             console.log('dato '+data.nombre);
 
                             $scope.usuario=data.nombre;
+                            $scope.activar=true;
 
 
                     }
