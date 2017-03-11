@@ -6,7 +6,16 @@
     /*
      *  Controla el foco de la cabecera
      */
-    function UsuariosController($scope, $location, AllUsers) {
+    function UsuariosController($scope, $location, AllUsers,Mysocket) {
+
+
+        $scope.nombre = 'aaafa';
+        Mysocket.emit('qrmensaje', $scope.nombre);
+        Mysocket.on('qrmensaje2', function (data) {
+            $scope.$apply(function () {
+                $scope.resultado = data;
+            });
+        });
 
         $scope.allUsers = AllUsers.query();
 
@@ -25,10 +34,10 @@
         $scope.initModalChat = function () {
             $('.modalChat').modal();
         }
-        $scope.modalChat = function (usuarioChat,usuarioChatIMG) {
+        $scope.modalChat = function (usuarioChat, usuarioChatIMG) {
             console.log(usuarioChatIMG);
-            $scope.usuarioChatIMG=usuarioChatIMG;
-            $scope.usuarioChat=usuarioChat;
+            $scope.usuarioChatIMG = usuarioChatIMG;
+            $scope.usuarioChat = usuarioChat;
 
             $('.modalChat')
                 .modal('setting', 'transition', 'horizontal flip')

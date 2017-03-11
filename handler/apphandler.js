@@ -11,6 +11,9 @@ module.exports = {
         var router = pRouterHandler.getRouter();
         var routerPrefix = pRouterPrefix;
         var port = pPort;
+        var server = require('http').Server(app);
+        var io = require('socket.io')(server);
+
 
         this.disableAccessControl = function () {
             // Add headers
@@ -47,6 +50,14 @@ module.exports = {
             app.use(express.static(__dirname + './../uploads'));
             app.use(bodyParser.json());
             app.use(routerPrefix, router);
+
+            io.sockets.on('connection', function(socket) {
+                console.log('conectado');
+
+
+
+            //console.log(io);
+		});
 
             console.log('\n -Servidor en el puerto: ' + colors.green(port));
             app.listen(port);

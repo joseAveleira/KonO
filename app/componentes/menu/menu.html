@@ -3,10 +3,10 @@
     <a class="item" ng-click="inicio()" ng-class="{active: isActive('/')}">
         <img class="ui middle aligned tiny image" src="../../img/konoPNG.png">
     </a>
-    <a class="item" ng-click="proyectos()" ng-class="{active: isActive('/proyectos')}">
+    <a class="item" ng-show="usuario" ng-click="proyectos()" ng-class="{active: isActive('/proyectos')}">
         <i class="browser icon"></i> Proyectos
     </a>
-    <a class="item" ng-click="usuarios()" ng-class="{active: isActive('/usuarios')}">
+    <a class="item" ng-show="usuario" ng-click="usuarios()" ng-class="{active: isActive('/usuarios')}">
         <i class="users icon"></i> Colabs
     </a>
 

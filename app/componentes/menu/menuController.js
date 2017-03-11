@@ -59,7 +59,7 @@
                     function (data) {
 
 
-                            console.log('dato '+data.nombre)
+                            console.log('dato '+data.nombre);
 
                             $scope.usuario=data.nombre;
 
