@@ -1,25 +1,25 @@
-<div class="ui special cards" >
-  <div class="card cardUsuario" ng-init="dimmer()" ng-repeat="usuario in allUsers">
-    <div class="blurring dimmable image" style="cursor: pointer;">
-      <div class="ui dimmer">
-        <div class="content">
-          <div class="center">
-            <div class="inverted button"><i class="comments huge yellow icon"></i></div>
-          </div>
-        </div>
-      </div>
-      <img src="../../img/{{usuario.imagen}}">
-    </div>
-    <div class="content">
-      <a class="header">{{usuario.nombre}}</a>
-      <div class="meta">
-        <a>{{usuario.area}}</a>
-      </div>
-        <div class="description">
-               {{usuario.descripcion}}
+<div class="ui special cards">
+    <div class="card cardUsuario" ng-init="dimmer()" ng-repeat="usuario in allUsers">
+        <div class="blurring dimmable image" style="cursor: pointer;" ng-click="modalChat(usuario.nombre,usuario.imagen)">
+            <div class="ui dimmer">
+                <div class="content">
+                    <div class="center">
+                        <div class="inverted button"><i class="comments huge yellow icon"></i></div>
+                    </div>
+                </div>
             </div>
-    </div>
-    <div class="extra content">
+            <img src="../../img/{{usuario.imagen}}">
+        </div>
+        <div class="content">
+            <a class="header">{{usuario.nombre}}</a>
+            <div class="meta">
+                <a>{{usuario.area}}</a>
+            </div>
+            <div class="description">
+                {{usuario.descripcion}}
+            </div>
+        </div>
+        <div class="extra content">
             <span class="right floated">
         <rating id="my-rating{{usuario.idUsu}}" size="large" type="star" ng-model="usuario.estrellas"></rating>
       </span>
@@ -28,5 +28,31 @@
          {{usuario.localidad}}
       </span>
         </div>
-  </div>
+    </div>
+</div>
+
+<div class="ui modal modalChat" ng-init="initModalChat()">
+    <i class="close icon"></i>
+    <div class="header" style="background-color:#1B1C1D;color:#FFFFFF">
+        <i class="comments Wechat yellow icon"></i> Chateando con {{usuarioChat}}
+    </div>
+    <div class="image content">
+        <div class="ui medium image">
+            <img src="../../img/{{usuarioChatIMG}}">
+        </div>
+        <div class="description">
+            <div class="ui header">We've auto-chosen a profile image for you.</div>
+            <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui black deny button">
+            Nope
+        </div>
+        <div class="ui positive right labeled icon button">
+            Yep, that's me
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
 </div>
