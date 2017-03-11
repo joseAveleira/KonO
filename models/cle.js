@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 /*
- * Formato de la estructura modelLine
+ * Formato de la estructura Basica un proyecto propuesto
  */
 var cleSchema = new Schema({
     nombre: {
@@ -20,6 +20,6 @@ var cleSchema = new Schema({
 
 
 });
-// el nombre es el de la coleccion pero en singular
+// el nombre es el de la coleccion pero en singular!
 module.exports = mongoose.model('proyecto', cleSchema);
 

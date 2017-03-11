@@ -1,12 +1,32 @@
-[
-    {
-        "idUsu":"1",
-        "nombre": "jose",
-        "password": "jose"
-    },
-    {
-        "idUsu":"2",
-        "nombre": "demo",
-        "password": "actres5102"
-    }
-]
+[{
+
+	"area" : "Medicina",
+	"descripcion" : "Matthew es médico residente en Salamanca.",
+	"estrellas" : 5,
+	"idUsu" : "1",
+	"imagen" : "matthew.png",
+	"localidad" : "León, España",
+	"nombre" : "Matthew Giampietro",
+    "password":"Matthew"
+},
+{
+
+	"area" : "Electronica",
+	"descripcion" : "Christian es técnico electrónico en Siemens Madrid.",
+	"estrellas" : 4,
+	"idUsu" : "2",
+	"imagen" : "christian.jpg",
+	"localidad" : "Madrid, España",
+	"nombre" : "Pepe",
+    "password":"Pepe"
+},
+{
+	"area" : "Marketing",
+	"descripcion" : "Kristy es directora de arte en Almería",
+	"estrellas" : 5,
+	"idUsu" : "3",
+	"imagen" : "kristy.png",
+	"localidad" : "Almería, España",
+	"nombre" : "Ana",
+    "password":"Ana"
+}]

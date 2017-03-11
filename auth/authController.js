@@ -40,23 +40,49 @@ module.exports = {
         this.user = function (req, res) {
             console.log(req.params);
             var usuarios = new conDB.model('usuario');
-            usuarios.findOne(req.params, function (err, usuario) {
+            usuarios.findOne({
+                $and: [{
+                    nombre: req.body.nombre
+            }, {
+                    password: req.body.password
+                }]
+            }, function (err, usuario) {
                 return res.status(200).json(usuario);
             });
         };
 
-         this.allUser = function (req, res) {
+        this.loginf = function (req, res) {
+            console.log('  > nombre: ' + req.params.nombre);
+            console.log('  > password: ' + req.params.password);
 
-             var usuarios = new conDB.model('usuario');
-
-            usuarios.find({}, function (err, usuarios) {
+            var usuarios = new conDB.model('usuario');
+             usuarios.findOne({
+                $and: [req.params]
+            }, function (err, sugerencia) {
                 if (err) {
                     return res.status(500).send(err.message);
                 }
 
-                console.log('  > Listando: ' + usuarios.length);
-                res.status(200).json(usuarios);
+                res.status(200).json(sugerencia);
+
             });
+        };
+
+        this.allUser = function (req, res) {
+
+            var usuarios = new conDB.model('usuario');
+
+            usuarios.find({}, function (err, usuarios) {
+                    if (err) {
+                        return res.status(500).send(err.message);
+                    }
+
+                    console.log('  > Listando: ' + usuarios.length);
+                    res.status(200).json(usuarios);
+                })
+                .sort({
+                    'estrellas': -1
+                });
 
 
 

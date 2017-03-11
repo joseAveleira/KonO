@@ -11,6 +11,16 @@ module.exports = {
         var router = pRouterHandler.getRouter();
         var routerPrefix = pRouterPrefix;
         var port = pPort;
+        var server = require('http').Server(app);
+        var io = require('socket.io')(server);
+
+        require('./../handler/sockets.js').SocketIO(io);
+        pRouterHandler.setSocketIO(io);
+        var router = pRouterHandler.getRouter();
+        var routerPrefix = pRouterPrefix;
+        var port = pPort;
+
+
 
         this.disableAccessControl = function () {
             // Add headers
@@ -38,7 +48,7 @@ module.exports = {
 
             app.use(cors());
             app.use(bodyParser.urlencoded({
-                extended: true
+                extended: false
             }));
 
             app.use(express.static(__dirname + './../app'));
@@ -47,6 +57,8 @@ module.exports = {
             app.use(express.static(__dirname + './../uploads'));
             app.use(bodyParser.json());
             app.use(routerPrefix, router);
+
+
 
             console.log('\n -Servidor en el puerto: ' + colors.green(port));
             app.listen(port);
