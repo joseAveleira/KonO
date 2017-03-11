@@ -22,6 +22,22 @@
             });
         };
 
+        $scope.initModalChat = function () {
+            $('.modalChat').modal();
+        }
+        $scope.modalChat = function (usuarioChat,usuarioChatIMG) {
+            console.log(usuarioChatIMG);
+            $scope.usuarioChatIMG=usuarioChatIMG;
+            $scope.usuarioChat=usuarioChat;
+
+            $('.modalChat')
+                .modal('setting', 'transition', 'horizontal flip')
+                .modal('show');
+
+
+        };
+
+
     }
 
     angular
