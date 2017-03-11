@@ -1,4 +1,5 @@
-<div class="ui inverted labeled icon menu oscuro" ng-controller="MenuController">
+<span ng-controller="MenuController">
+<div class="ui inverted labeled icon menu oscuro" >
     <a class="item" ng-click="inicio()" ng-class="{active: isActive('/')}">
         <img class="ui middle aligned tiny image" src="../../img/konoPNG.png">
     </a>
@@ -8,18 +9,20 @@
     <a class="item" ng-click="usuarios()" ng-class="{active: isActive('/usuarios')}">
         <i class="users icon"></i> Colabs
     </a>
-    Hola:{{nombre}}
+
     <div class="right menu">
+
         <a class="item" ng-click="modalInicio()">
             <i class="circular inverted yellow user icon" style="
     color: black !important;"></i>
+          {{usuario}}
         </a>
 
     </div>
 </div>
 
 <!-- MODAL -->
-<div class="ui basic modal modalLogin" ng-init="initModal()" ng-controller="MenuController">
+<div class="ui basic modal modalLogin" ng-init="initModal()" >
     <div class="ui orange header loginRotando">
         <i class="huge icons">
             <i class="big loading sun icon"></i>
@@ -54,3 +57,4 @@
         </div>
     </div>
 </div>
+</span>
